@@ -10,14 +10,14 @@
                 <p>
                     Vamos aprender a trabalhar com arquivos EJS
                 </p>
+                <p><%= subtitle %></p>
             </div>
             <ul>
-                <% qualitys.forEach(function (a){ %>
+                <% qualitys.forEach(function (quality){ %>
                      <li>
-                        <strong><%= a.title %></strong> <%= a.message %>
+                        <strong><%= quality.title %> </strong> <%= quality.message %>
                     </li>
-                }))
-               
+                    <% });  %>
             </ul>
         </main>
 
